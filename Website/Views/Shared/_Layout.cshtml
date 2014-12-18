@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <link href="~/lib/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    @*<link href="~/lib/veropath/veropath.min.css" rel="stylesheet" />*@
+
+</head>
+<body> 
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <script src="~/lib/js/jquery-legacy/jquery.min.js"></script>
+    <!--[if gt IE 8]>
+        <script src="~/lib/js/jquery/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if !IE]> -->
+    <script src="~/lib/js/jquery/jquery.min.js"></script>
+    <!-- <![endif]-->
+
+    <script src="~/lib/js/bootstrap/bootstrap.min.js"></script>
+    <script src="~/lib/js/respond/respond.min.js"></script>
+    <script src="~/lib/js/angular/angular.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

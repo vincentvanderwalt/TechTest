@@ -1,0 +1,29 @@
+{
+    "name": "Website",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "~3.3.1",
+        "angular": "#~1.2",
+        "respond": "~1.4.2",
+        "jquery-legacy": "jquery#1"
+    },
+    "exportsOverride": {
+        "angular": {
+            "js": "angular.min.*"
+        },
+        "bootstrap": {
+            "js": "dist/js/*.min.*",
+            "css": "dist/css/*.min.css"
+        },
+        "jquery": {
+            "js": "dist/*.min.*"
+        },
+        "jquery-legacy": {
+            "js": "dist/*.min.*"
+        },
+        "respond": {
+            "js": "dest/respond.min.js"
+        }
+
+    }
+}

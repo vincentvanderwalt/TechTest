@@ -1,0 +1,10 @@
+﻿<div ng-app="HomeApp" ng-controller="HomeIndexController">
+    <input type="text" ng-model="detail" /><button ng-click="postDetail()">Update</button>
+    <h1>{{detail}}</h1>
+    <h2>{{result}}</h2>
+</div>
+@section scripts{
+    <script src="~/lib/js/veropath/home_index_controller.min.js"></script>
+    <script src="~/lib/js/veropath/home_index_factory.min.js"></script>
+    <script src="~/lib/js/veropath/home_controller_registration.min.js"></script>
+}
